@@ -5,7 +5,7 @@ import axios from "axios";
 import CustomInput from "./Custominput";
 import "./AddTask.scss";
 import CustomButton from "./CustomButton";
-const AddTask = () => {
+const AddTask = ({ fetchTasks }) => {
     const [task, setTask] = useState("");
     const alert = useAlert();
     const onChange = (e) => {
@@ -30,6 +30,9 @@ const AddTask = () => {
             console.error("Erro ao adicionar tarefa:", error);
             alert.error("Ocorreu um erro ao adicionar a tarefa.");
         }
+
+        await fetchTasks();
+        setTask("");
     };
 
     return (
