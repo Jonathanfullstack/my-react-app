@@ -13,13 +13,23 @@ const AddTask = () => {
     };
 
     const handleTaskAddition = async () => {
+        if (task.length === 0) {
+            alert.error(
+                "A tarefa precisa de uma descricao para ser adicionada!"
+            );
+            return;
+        }
+
         try {
-            if (task.length == 0) {
-                return alert.error(
-                    "A tarefa precisa de uma descricao para ser adicionada!"
-                );
-            }
-        } catch (error) {}
+            await axios.post("http://localhost:8000/tasks", {
+                description: task,
+                isCompleted: false,
+            });
+            alert.success("Tarefa adicionada com sucesso!"); // Opcional: exibir uma mensagem de sucesso
+        } catch (error) {
+            console.error("Erro ao adicionar tarefa:", error);
+            alert.error("Ocorreu um erro ao adicionar a tarefa.");
+        }
     };
 
     return (

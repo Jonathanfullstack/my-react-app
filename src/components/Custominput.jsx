@@ -8,7 +8,7 @@ const Custominput = ({ label, value, onChange }) => {
                 type="text"
                 className="custom-input"
                 value={value}
-                onChange={(e) => console.log(e.target.value)}
+                onChange={(e) => onChange(e)}
             />
             {label ? (
                 <label
