@@ -10,8 +10,8 @@ const TaskItem = ({ task, fetchTask }) => {
             await axios.delete(`http://localhost:8000/tasks/${task._id}`);
             await fetchTask();
             alert.success("A tarefa foi removida com sucesso!");
-        } catch (error) {
-            console.error("Error deleting task:", error);
+        } catch (_error) {
+            alert.error("Algo deu errado!");
         }
     };
     const handleTaskCompleted = async (e) => {

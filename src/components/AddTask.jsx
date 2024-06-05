@@ -26,8 +26,7 @@ const AddTask = ({ fetchTasks }) => {
                 isCompleted: false,
             });
             alert.success("Tarefa adicionada com sucesso!"); // Opcional: exibir uma mensagem de sucesso
-        } catch (error) {
-            console.error("Erro ao adicionar tarefa:", error);
+        } catch (_e) {
             alert.error("Ocorreu um erro ao adicionar a tarefa.");
         }
 
