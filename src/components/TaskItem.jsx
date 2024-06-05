@@ -21,7 +21,7 @@ const TaskItem = ({ task, fetchTask }) => {
             });
             await fetchTask();
             alert.success("A tarefa foi concluida com sucesso !");
-        } catch (error) {
+        } catch (_error) {
             alert.error("Algo deu errado!");
         }
     };

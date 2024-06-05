@@ -4,9 +4,10 @@ import axios from "axios";
 import "./Tasks.scss";
 import TaskItem from "./TaskItem";
 import AddTask from "./AddTask";
+import { useAlert } from "react-alert";
 function Tasks() {
     const [tasks, setTask] = useState([]);
-
+    const alert = useAlert();
     useEffect(() => {
         fetchTask();
     }, []);
@@ -15,8 +16,8 @@ function Tasks() {
         try {
             const { data } = await axios.get("http://localhost:8000/tasks");
             setTask(data);
-        } catch (error) {
-            console.log(error);
+        } catch (_error) {
+            alert.error("Nao foi possivel recuperar as tarefas!");
         }
     };
     return (
@@ -29,7 +30,11 @@ function Tasks() {
                     {tasks
                         .filter((task) => task.isCompleted === false)
                         .map((lastTask) => (
-                            <TaskItem task={lastTask} fetchTask={fetchTask} />
+                            <TaskItem
+                                key={lastTask._id}
+                                task={lastTask}
+                                fetchTask={fetchTask}
+                            />
                         ))}
                 </div>
             </div>
@@ -40,6 +45,7 @@ function Tasks() {
                         .filter((task) => task.isCompleted)
                         .map((completedTask) => (
                             <TaskItem
+                                key={completedTask._id}
                                 task={completedTask}
                                 fetchTask={fetchTask}
                             />
