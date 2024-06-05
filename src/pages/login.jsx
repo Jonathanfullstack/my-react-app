@@ -6,7 +6,7 @@ const Login = () => {
   const navigate = useNavigate();
 
   const handleSignCLick = () => {
-    navigate("/");
+    navigate("/Jonathan");
   };
   return (
     <div className="login-container">
