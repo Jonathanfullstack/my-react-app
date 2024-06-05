@@ -1,18 +1,24 @@
 import CustomButton from "./CustomButton";
 import "./sidebar.scss";
+import { useNavigate } from "react-router-dom";
 
 const Sidebar = () => {
-    return (
-        <div className="sidebar-container">
-            <div className="logo">
-                <h1>TaskMananger!</h1>
-            </div>
+  const navigate = useNavigate();
 
-            <div className="sign-out">
-                <CustomButton>Sair</CustomButton>
-            </div>
-        </div>
-    );
+  const hangleSairButton = () => {
+    navigate("/login");
+  };
+  return (
+    <div className="sidebar-container">
+      <div className="logo">
+        <h1>TaskMananger!</h1>
+      </div>
+
+      <div className="sign-out">
+        <CustomButton onClick={hangleSairButton}>Sair</CustomButton>
+      </div>
+    </div>
+  );
 };
 
 export default Sidebar;
