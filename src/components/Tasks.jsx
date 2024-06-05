@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import axios from "axios";
 
 import "./Tasks.scss";
@@ -9,14 +9,14 @@ function Tasks() {
   const [tasks, setTask] = useState([]);
   const alert = useAlert();
 
-  const fetchTask = async () => {
+  const fetchTask = useCallback(async () => {
     try {
       const { data } = await axios.get("http://localhost:8000/tasks");
       setTask(data);
     } catch (_error) {
       alert.error("Nao foi possivel recuperar as tarefas!");
     }
-  };
+  }, [alert]);
   const lastTask = useMemo(() => {
     return tasks.filter((task) => task.isCompleted === false);
   }, [tasks]);
@@ -25,7 +25,7 @@ function Tasks() {
   }, [tasks]);
   useEffect(() => {
     fetchTask();
-  }, []);
+  }, [fetchTask]);
   return (
     <div className="tasks-container">
       <h2>Minhas Tarefas</h2>
