@@ -11,7 +11,9 @@ function Tasks() {
 
   const fetchTask = useCallback(async () => {
     try {
-      const { data } = await axios.get("http://localhost:8000/tasks");
+      const { data } = await axios.get(
+        "https://task-back-end.onrender.com/tasks"
+      );
       setTask(data);
     } catch (_error) {
       alert.error("Nao foi possivel recuperar as tarefas!");
