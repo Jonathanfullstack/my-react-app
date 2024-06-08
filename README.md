@@ -12,14 +12,14 @@ The project was carried out using the [Next.js](https://nextjs.org) framework, i
 
 Task Manager is a modern and efficient web application designed to help individuals and teams organize and manage their daily activities. This project was built using a robust technology stack that includes React for the front-end, Node.js with Express for the back-end, MongoDB as the database, as well as SaaS for style management, nodemon for development, JavaScript as core language and Yarn for dependency management.
 
-Technologies Used <br>
-Frontend: React  <br>
-Backend: Node.js with Express<br>
-Database: MongoDB<br>
-Style: SaaS<br>
-Development: Nodemon <br>
-Language: JavaScript <br>
-Dependency Management: Yarn <br>
+### ´Technologies Used <br>´´
+### ´Frontend: React  <br>´
+### ´Backend: Node.js with Express<br>´
+### ´Database: MongoDB<br>´
+### ´Style: SaaS<br>´
+### ´Development: Nodemon <br>´
+### ´Language: JavaScript <br>´
+### ´Dependency Management: Yarn <br>´
 
 Before starting, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed.
 
@@ -56,7 +56,7 @@ You may also see any lint errors in the console.
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
- `npm run build`
+ ### `npm run build`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
