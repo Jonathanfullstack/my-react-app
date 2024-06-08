@@ -12,7 +12,7 @@ The project was carried out using the [Next.js](https://nextjs.org) framework, i
 
 Task Manager is a modern and efficient web application designed to help individuals and teams organize and manage their daily activities. This project was built using a robust technology stack that includes React for the front-end, Node.js with Express for the back-end, MongoDB as the database, as well as SaaS for style management, nodemon for development, JavaScript as core language and Yarn for dependency management.
 
-´Technologies Used´ <br>
+### ´Technologies Used´ <br>
 ´Frontend: React  <br>´
 ´Backend: Node.js with Express<br>´
 ´Database: MongoDB<br>´
