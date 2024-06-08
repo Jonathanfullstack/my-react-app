@@ -1,3 +1,40 @@
+<h1 align="center">❓Task Mananger</h1>
+
+> 🔎 Task manager with database to save information.
+> ![image](https://github.com/Jonathanfullstack/my-react-app/assets/141459667/5e9b2a0f-985d-456a-89f7-58f0d4a3b2c4)
+
+
+## :page_facing_up: Explanation
+
+The project was carried out using the [Next.js](https://nextjs.org) framework, integrating with the [API](https://github.com/Jonathanfullstack/task-back-end), which helped with authentication, registration, login and data integration. 
+
+🎲 **How ​​the Project Works**
+
+Task Manager is a modern and efficient web application designed to help individuals and teams organize and manage their daily activities. This project was built using a robust technology stack that includes React for the front-end, Node.js with Express for the back-end, MongoDB as the database, as well as SaaS for style management, nodemon for development, JavaScript as core language and Yarn for dependency management.
+
+Technologies Used
+Frontend: React
+Backend: Node.js with Express
+Database: MongoDB
+Style: SaaS
+Development: Nodemon
+Language: JavaScript
+Dependency Management: Yarn
+
+Before starting, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed.
+
+
+## 📝 License
+
+This project is under license. See the [LICENSE](LICENSE.md) file for more details.
+
+&#xa0;
+
+<a href="#top">Go back to top</a>
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -39,32 +76,4 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
